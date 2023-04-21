@@ -1,4 +1,5 @@
 @import url("./variables.css");
+@import url(./extraclass.css);
 
 * {
     padding: 0;
@@ -101,12 +102,10 @@ section {
 }
 
 .about-us__title {
-    margin-top: 40px;
+    margin-top: var( --margin-l);
 }
 
-.mt-20 {
-    margin-top: 20px;
-}
+
 
 
 @media (min-width: 1024px ) and (max-width: 1024.98px) {
@@ -128,7 +127,7 @@ section {
     .image {
         margin-top: var(--margin-laptop-70px-);
         width: 900px;
-        height: 469px;
+        height: 369px;
     }
 
     .paragraph {
@@ -148,21 +147,16 @@ section {
 
     .laptop_img {
         width: 320px;
-        height: 105px;
-        margin-top: 90px;
+        height: 135px;
+        margin-top: var( --margin-xxl);
        
-    }
-
-
-
-
-    .first__direction {
-        margin-top: var( --padding-xxl);
     }
 
     .direction {
         justify-content: space-between;
         display: flex;
+        height: 200px;
+    
     }
 
     .direction-text-wrapper {
@@ -173,15 +167,18 @@ section {
 
     .title {
         font-size: var(--laptop-fs-60px-);
+        margin-top: var(--margin-xxl);
     }
 
     .sub-title {
         font-size: var(--laptop-fs-24px-);
     }
 
+    .directions {
+        height: 800px;
+    }
     
-    
-   
+
 
 
 }
